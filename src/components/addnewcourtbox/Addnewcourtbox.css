@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
 }
-.body-box {
-    background-color: #6d81c2;
+
+  .body-box {
+    background-color: #1865b1;
   }
+  
+  .image-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+   
+  }
+  
+  .image-preview img {
+    border-radius: 8px;
+  }
+  
