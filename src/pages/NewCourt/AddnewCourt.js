@@ -5,11 +5,14 @@ import AddnewCourtbox from '../../components/addnewcourtbox/AddnewCourtbox'
 
 function AddnewCourt() {
   return (
-    <>
-       <MainnavBar />
-       <AddnewCourtbox />
+    <div>
+ <MainnavBar />
+ <AddnewCourtbox />
+
+    </div>
+      
     
-    </>
+    
  
   )
 }

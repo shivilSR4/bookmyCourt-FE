@@ -1,0 +1,51 @@
+.body-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content h3,
+.modal-content h4 {
+  margin: 10px 0;
+}
+
+.modal-content .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.modal-content .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-content .form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}

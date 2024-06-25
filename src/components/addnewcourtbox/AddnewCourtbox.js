@@ -12,7 +12,7 @@ import {
   MDBFile
 } from 'mdb-react-ui-kit';
 import axios from 'axios';
-import { type } from '@testing-library/user-event/dist/type';
+
 
 function AddnewCourtbox() {
   const [selectedImages, setSelectedImages] = useState();
@@ -64,18 +64,18 @@ function AddnewCourtbox() {
   return (
     <MDBContainer fluid className='body-box'>
       <MDBRow className='d-flex justify-content-center align-items-center'>
-        <MDBCol lg='9' className='my-5'>
+        <MDBCol lg='8' className='my-3'>
           <h1 className='text-white mb-4'>Add Your Court Details</h1>
           <MDBCard>
-            <MDBCardBody className='px-4'>
-              <MDBRow className='align-items-center pt-4 pb-3'>
-                <MDBCol md='3' className='ps-5'>
+            <MDBCardBody className='px-8'>
+              <MDBRow className='align-items-center pt-3 pb-2'>
+                <MDBCol md='5' className='ps-4'>
                   <h6 className='mb-0'>Court name</h6>
                 </MDBCol>
-                <MDBCol md='9' className='pe-5'>
+                <MDBCol md='7' className='pe-5'>
                   <MDBInput
                     label='Name'
-                    size='lg'
+                    size='xl'
                     id='form1'
                     type='text'
                     name='name'
@@ -86,10 +86,10 @@ function AddnewCourtbox() {
               </MDBRow>
               <hr className='mx-n3' />
               <MDBRow className='align-items-center pt-4 pb-3'>
-                <MDBCol md='3' className='ps-5'>
+                <MDBCol md='5' className='ps-5'>
                   <h6 className='mb-0'>Location</h6>
                 </MDBCol>
-                <MDBCol md='9' className='pe-5'>
+                <MDBCol md='7' className='pe-5'>
                   <MDBInput
                     label='Location'
                     size='lg'
@@ -102,10 +102,10 @@ function AddnewCourtbox() {
                 </MDBCol>
               </MDBRow>
               <MDBRow className='align-items-center pt-4 pb-3'>
-                <MDBCol md='3' className='ps-5'>
+                <MDBCol md='5' className='ps-5'>
                   <h6 className='mb-0'>Number</h6>
                 </MDBCol>
-                <MDBCol md='9' className='pe-5'>
+                <MDBCol md='7' className='pe-5'>
                   <MDBInput
                     label='Number'
                     size='lg'
@@ -119,10 +119,10 @@ function AddnewCourtbox() {
               </MDBRow>
               <hr className='mx-n3' />
               <MDBRow className='align-items-center pt-4 pb-3'>
-                <MDBCol md='3' className='ps-5'>
+                <MDBCol md='5' className='ps-5'>
                   <h6 className='mb-0'>Address</h6>
                 </MDBCol>
-                <MDBCol md='9' className='pe-5'>
+                <MDBCol md='7' className='pe-5'>
                   <MDBTextArea
                     label='Address'
                     id='textAreaExample'
@@ -135,10 +135,10 @@ function AddnewCourtbox() {
               </MDBRow>
               <hr className='mx-n3' />
               <MDBRow className='align-items-center pt-4 pb-3'>
-                <MDBCol md='3' className='ps-5'>
+                <MDBCol md='5' className='ps-5'>
                   <h6 className='mb-0'>Description</h6>
                 </MDBCol>
-                <MDBCol md='9' className='pe-5'>
+                <MDBCol md='7' className='pe-5'>
                   <MDBTextArea
                     label='Description'
                     id='textAreaExample1'
@@ -151,16 +151,16 @@ function AddnewCourtbox() {
               </MDBRow>
               <hr className='mx-n3' />
               <MDBRow className='align-items-center pt-4 pb-3'>
-                <MDBCol md='3' className='ps-5'>
+                <MDBCol md='4' className='ps-5'>
                   <h6 className='mb-0'>Image</h6>
                 </MDBCol>
-                <MDBCol md='9' className='pe-5'>
+                <MDBCol md='8' className='pe-5'>
                   <MDBFile size='lg' id='customFile' onChange={imageChange} />
                   <div className='small text-muted mt-2'>Upload your Court Images</div>
                 </MDBCol>
               </MDBRow>
               <hr className='mx-n3' />
-              <MDBBtn className='my-4' size='lg' onClick={uploadData}>
+              <MDBBtn className='my-6' size='lg' onClick={uploadData}>
                 Upload
               </MDBBtn>
               {selectedImages && (

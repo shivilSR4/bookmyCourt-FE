@@ -27,12 +27,12 @@ function MainnavBar() {
         </MDBNavbarToggler>
         <MDBCollapse navbar show={openNavSecond}>
           <MDBNavbarNav className='d-flex flrex-direction-column'>
-            <MDBNavbarLink active aria-current='page' href='#'>
+            <MDBNavbarLink active aria-current='page' href='/home'>
               Home
             </MDBNavbarLink>
-            <MDBNavbarLink href='addNewCourt'>AddNewCourt</MDBNavbarLink>
+            <MDBNavbarLink href='/addNewCourt'>AddNewCourt</MDBNavbarLink>
             <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
-            <MDBNavbarLink  href='#' >Help
+            <MDBNavbarLink  href='/help' >Help
             </MDBNavbarLink>    
             <MDBNavbarLink  href='#'  className='align-self-end'>{user.name}
             </MDBNavbarLink>         
